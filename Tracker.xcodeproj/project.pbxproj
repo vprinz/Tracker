@@ -8,19 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		1B0C393F2C6225DE0093B1A4 /* TrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0C393E2C6225DE0093B1A4 /* TrackerApp.swift */; };
-		1B0C39412C6225DE0093B1A4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0C39402C6225DE0093B1A4 /* ContentView.swift */; };
+		1B0C39412C6225DE0093B1A4 /* ProjectListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0C39402C6225DE0093B1A4 /* ProjectListView.swift */; };
 		1B0C39432C6225E00093B1A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B0C39422C6225E00093B1A4 /* Assets.xcassets */; };
 		1B0C39462C6225E00093B1A4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B0C39452C6225E00093B1A4 /* Preview Assets.xcassets */; };
 		1B0C394E2C6227930093B1A4 /* FontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0C394D2C6227930093B1A4 /* FontExtension.swift */; };
+		1B0C39512C62384C0093B1A4 /* StatBubbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0C39502C62384C0093B1A4 /* StatBubbleView.swift */; };
+		1B0C39532C6239D90093B1A4 /* ProjectCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0C39522C6239D90093B1A4 /* ProjectCardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1B0C393B2C6225DE0093B1A4 /* Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B0C393E2C6225DE0093B1A4 /* TrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackerApp.swift; sourceTree = "<group>"; };
-		1B0C39402C6225DE0093B1A4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1B0C39402C6225DE0093B1A4 /* ProjectListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectListView.swift; sourceTree = "<group>"; };
 		1B0C39422C6225E00093B1A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1B0C39452C6225E00093B1A4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1B0C394D2C6227930093B1A4 /* FontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontExtension.swift; sourceTree = "<group>"; };
+		1B0C39502C62384C0093B1A4 /* StatBubbleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatBubbleView.swift; sourceTree = "<group>"; };
+		1B0C39522C6239D90093B1A4 /* ProjectCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectCardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,9 +57,9 @@
 		1B0C393D2C6225DE0093B1A4 /* Tracker */ = {
 			isa = PBXGroup;
 			children = (
+				1B0C394F2C6238310093B1A4 /* Project List */,
 				1B0C394C2C62276D0093B1A4 /* Helpers */,
 				1B0C393E2C6225DE0093B1A4 /* TrackerApp.swift */,
-				1B0C39402C6225DE0093B1A4 /* ContentView.swift */,
 				1B0C39422C6225E00093B1A4 /* Assets.xcassets */,
 				1B0C39442C6225E00093B1A4 /* Preview Content */,
 			);
@@ -76,6 +80,16 @@
 				1B0C394D2C6227930093B1A4 /* FontExtension.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		1B0C394F2C6238310093B1A4 /* Project List */ = {
+			isa = PBXGroup;
+			children = (
+				1B0C39402C6225DE0093B1A4 /* ProjectListView.swift */,
+				1B0C39502C62384C0093B1A4 /* StatBubbleView.swift */,
+				1B0C39522C6239D90093B1A4 /* ProjectCardView.swift */,
+			);
+			path = "Project List";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,7 +163,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B0C394E2C6227930093B1A4 /* FontExtension.swift in Sources */,
-				1B0C39412C6225DE0093B1A4 /* ContentView.swift in Sources */,
+				1B0C39412C6225DE0093B1A4 /* ProjectListView.swift in Sources */,
+				1B0C39532C6239D90093B1A4 /* ProjectCardView.swift in Sources */,
+				1B0C39512C62384C0093B1A4 /* StatBubbleView.swift in Sources */,
 				1B0C393F2C6225DE0093B1A4 /* TrackerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
