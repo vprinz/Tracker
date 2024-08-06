@@ -6,12 +6,14 @@
 //
 
 import SwiftUI
+import SwiftData
 
 @main
 struct TrackerApp: App {
     var body: some Scene {
         WindowGroup {
             ProjectListView()
+                .modelContainer(for: [Project.self, ProjectUpdate.self])
         }
     }
 }
