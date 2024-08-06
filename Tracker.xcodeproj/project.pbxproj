@@ -16,6 +16,7 @@
 		1B0C39532C6239D90093B1A4 /* ProjectCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0C39522C6239D90093B1A4 /* ProjectCardView.swift */; };
 		1B0C39562C6256860093B1A4 /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0C39552C6256860093B1A4 /* Project.swift */; };
 		1B0C39582C6256D00093B1A4 /* ProjectUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0C39572C6256D00093B1A4 /* ProjectUpdate.swift */; };
+		1B0C395A2C6258DF0093B1A4 /* AddProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0C39592C6258DF0093B1A4 /* AddProjectView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		1B0C39522C6239D90093B1A4 /* ProjectCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectCardView.swift; sourceTree = "<group>"; };
 		1B0C39552C6256860093B1A4 /* Project.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
 		1B0C39572C6256D00093B1A4 /* ProjectUpdate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectUpdate.swift; sourceTree = "<group>"; };
+		1B0C39592C6258DF0093B1A4 /* AddProjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProjectView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 				1B0C39402C6225DE0093B1A4 /* ProjectListView.swift */,
 				1B0C39502C62384C0093B1A4 /* StatBubbleView.swift */,
 				1B0C39522C6239D90093B1A4 /* ProjectCardView.swift */,
+				1B0C39592C6258DF0093B1A4 /* AddProjectView.swift */,
 			);
 			path = "Project List";
 			sourceTree = "<group>";
@@ -178,6 +181,7 @@
 			files = (
 				1B0C394E2C6227930093B1A4 /* FontExtension.swift in Sources */,
 				1B0C39412C6225DE0093B1A4 /* ProjectListView.swift in Sources */,
+				1B0C395A2C6258DF0093B1A4 /* AddProjectView.swift in Sources */,
 				1B0C39532C6239D90093B1A4 /* ProjectCardView.swift in Sources */,
 				1B0C39512C62384C0093B1A4 /* StatBubbleView.swift in Sources */,
 				1B0C393F2C6225DE0093B1A4 /* TrackerApp.swift in Sources */,

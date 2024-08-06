@@ -6,8 +6,13 @@
 //
 
 import SwiftUI
+import SwiftData
 
 struct ProjectListView: View {
+    
+    @State private var newProject: Project?
+    @Query private var projects: [Project]
+    
     var body: some View {
         ZStack {
             LinearGradient(
@@ -23,9 +28,9 @@ struct ProjectListView: View {
                 
                 ScrollView(showsIndicators: false) {
                     VStack(spacing: 26) {
-                        ProjectCardView()
-                        ProjectCardView()
-                        ProjectCardView()
+                        ForEach(projects) { project in
+                            ProjectCardView(project: project)
+                        }
                     }
                 }
             }
@@ -35,7 +40,7 @@ struct ProjectListView: View {
                 Spacer()
                 HStack {
                     Button(action: {
-                        // todo
+                        self.newProject = Project()
                     }, label: {
                         ZStack {
                             Circle()
@@ -48,6 +53,10 @@ struct ProjectListView: View {
                 }
             }
             .padding(.leading)
+        }
+        .sheet(item: $newProject) { project in
+            AddProjectView(project: project)
+                .presentationDetents([.fraction(0.2)])
         }
     }
 }

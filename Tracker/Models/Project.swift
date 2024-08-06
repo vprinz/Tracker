@@ -12,6 +12,7 @@ import SwiftData
 @Model
 class Project: Identifiable {
     @Attribute(.unique) var id: String
+    var name = ""
     var startDate = Date()
     var focus = ""
     
