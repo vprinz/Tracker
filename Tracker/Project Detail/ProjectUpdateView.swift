@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct ProjectUpdateView: View {
+    
+    var projectUpdate: ProjectUpdate
+    
     var body: some View {
         ZStack {
             Rectangle()
@@ -15,20 +18,20 @@ struct ProjectUpdateView: View {
                 .shadow(radius: 5, x: 0, y: 4)
             VStack(alignment: .leading, spacing: 10) {
                 HStack {
-                    Text("Thursday, September 20, 2023")
+                    Text(DataHelper.projectUpdateDate(inputDate: projectUpdate.date))
                         .padding(.leading)
                     Spacer()
-                    Text("9 Hours")
+                    Text("\(projectUpdate.hours) Hours")
                         .padding(.trailing)
                 }
                 .padding(.vertical, 5)
                 .background {
                     Color("Orchid")
                 }
-                Text("Made progress on the progress bar")
+                Text(projectUpdate.headline)
                     .font(.smallHeadline)
                     .padding(.horizontal)
-                Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet lacinia dolor. Etiam rhoncus et ante ac cursus. Vestibulum vitae mauris a sem fringilla venenatis. Donec et porta mauris.")
+                Text(projectUpdate.summary)
                     .padding(.horizontal)
                     .padding(.bottom)
             }
@@ -37,8 +40,4 @@ struct ProjectUpdateView: View {
         }
         .clipShape(RoundedRectangle(cornerRadius: 15))
     }
-}
-
-#Preview {
-    ProjectUpdateView()
 }

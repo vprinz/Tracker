@@ -15,7 +15,7 @@ class ProjectUpdate: Identifiable {
     var headline = ""
     var summary = ""
     var date = Date()
-    var hours = 0.0
+    var hours = 0
     var updateType = UpdateType.log
     var project: Project?
     

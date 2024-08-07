@@ -12,6 +12,7 @@ struct ProjectDetailView: View {
     
     @Environment(\.dismiss) var dismiss
     var project: Project
+    @State private var projectUpdate: ProjectUpdate?
     
     var body: some View {
         ZStack {
@@ -72,11 +73,9 @@ struct ProjectDetailView: View {
                 // Project Updates
                 ScrollView(showsIndicators: false) {
                     VStack(spacing: 27) {
-                        ProjectUpdateView()
-                        ProjectUpdateView()
-                        ProjectUpdateView()
-                        ProjectUpdateView()
-                        ProjectUpdateView()
+                        ForEach(project.updates) { projectUpdate in
+                            ProjectUpdateView(projectUpdate: projectUpdate)
+                        }
                     }
                     .padding()
                     .padding(.bottom, 100)
@@ -88,7 +87,7 @@ struct ProjectDetailView: View {
                 Spacer()
                 HStack {
                     Button(action: {
-                        // todo: add new project update
+                        self.projectUpdate = ProjectUpdate()
                     }, label: {
                         ZStack {
                             Circle()
@@ -117,5 +116,10 @@ struct ProjectDetailView: View {
             
         }
         .navigationBarBackButtonHidden(true)
+        .sheet(item: $projectUpdate) { projectUpdate in
+            AddProjectUpdateView(project: project, projectUpdate: projectUpdate)
+                .presentationDetents([.fraction(0.3)])
+        }
+
     }
 }

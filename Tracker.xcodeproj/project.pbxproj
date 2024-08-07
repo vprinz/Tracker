@@ -19,6 +19,8 @@
 		1B0C395A2C6258DF0093B1A4 /* AddProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0C39592C6258DF0093B1A4 /* AddProjectView.swift */; };
 		1B0C395E2C626E4E0093B1A4 /* ProjectDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0C395D2C626E4E0093B1A4 /* ProjectDetailView.swift */; };
 		1B0C39602C627C160093B1A4 /* ProjectUpdateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0C395F2C627C160093B1A4 /* ProjectUpdateView.swift */; };
+		1B0C39622C6397470093B1A4 /* AddProjectUpdateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0C39612C6397470093B1A4 /* AddProjectUpdateView.swift */; };
+		1B0C39642C639A500093B1A4 /* DataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0C39632C639A500093B1A4 /* DataHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +37,8 @@
 		1B0C39592C6258DF0093B1A4 /* AddProjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProjectView.swift; sourceTree = "<group>"; };
 		1B0C395D2C626E4E0093B1A4 /* ProjectDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectDetailView.swift; sourceTree = "<group>"; };
 		1B0C395F2C627C160093B1A4 /* ProjectUpdateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectUpdateView.swift; sourceTree = "<group>"; };
+		1B0C39612C6397470093B1A4 /* AddProjectUpdateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProjectUpdateView.swift; sourceTree = "<group>"; };
+		1B0C39632C639A500093B1A4 /* DataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				1B0C394D2C6227930093B1A4 /* FontExtension.swift */,
+				1B0C39632C639A500093B1A4 /* DataHelper.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -119,6 +124,7 @@
 			children = (
 				1B0C395D2C626E4E0093B1A4 /* ProjectDetailView.swift */,
 				1B0C395F2C627C160093B1A4 /* ProjectUpdateView.swift */,
+				1B0C39612C6397470093B1A4 /* AddProjectUpdateView.swift */,
 			);
 			path = "Project Detail";
 			sourceTree = "<group>";
@@ -202,7 +208,9 @@
 				1B0C393F2C6225DE0093B1A4 /* TrackerApp.swift in Sources */,
 				1B0C39602C627C160093B1A4 /* ProjectUpdateView.swift in Sources */,
 				1B0C39562C6256860093B1A4 /* Project.swift in Sources */,
+				1B0C39642C639A500093B1A4 /* DataHelper.swift in Sources */,
 				1B0C39582C6256D00093B1A4 /* ProjectUpdate.swift in Sources */,
+				1B0C39622C6397470093B1A4 /* AddProjectUpdateView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
